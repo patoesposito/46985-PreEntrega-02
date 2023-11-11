@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    background-color: beige;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+    .encabezado {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100px;
+        background-color: #fff;
+    }
+
+    /*Buscar*/
+
+    .btn {
+        margin-bottom: 20px;
+    }
+
+    /* Header */
+    header {
+        border-bottom: 1px solid black;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    /* Logo */
+    .logo {
+        width: 150px;
+        cursor: pointer;
+    }
+
+    /* Barras de sitios web */
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 20px 10px;
+        padding: 0 20px;
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: black;
+    }
+
+    a:hover {
+        background-color: blue;
+        color: #fafafa;
+    }
+
+    /* Main */
+    main {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        text-decoration: underline;
+        margin: 10px 0;
+    }
+
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+        margin: 20px 0;
+    }
+
+    /* Promociones */
+    .promocionAdidas,
+    .promocionNike,
+    .promocionPuma {
+        width: 500px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        text-decoration: underline;
+        text-transform: uppercase;
+        margin: 20px 0;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    /* Compra segura */
+    .ql-align-center img {
+        width: 800px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    /* Footer */
+    footer {
+        margin: 20px;
+        padding: 20px;
+        border-top: 1px solid black;
+        text-align: center;
+    }
+
+    .whats {
+        margin: auto;
+        padding: auto;
+        border: 1px solid #333;
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .fb {
+        margin-bottom: auto;
+        margin: auto;
+        padding: auto;
+        border: 10px solid black;
+        width: 100px;
+        height: auto;
+    }
+
+    /* Iframe */
+    iframe {
+        display: block;
+        margin: auto;
+    }
+
+    /* Formulario */
+    form {
+        margin-top: 20px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    input,
+    textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width:1023px) {
+        /*header*/
+
+        .encabezado {
+            height: auto;
+            flex-direction:column ;
+            text-align: center;
+        }
+    }
+
