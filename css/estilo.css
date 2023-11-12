@@ -60,12 +60,6 @@ body {
         color: #fafafa;
     }
 
-    /*Banner*/
-    
-    .carousel-inner {
-        font-size: 2.5rem;
-    }
-
     /* Main */
     main {
         margin: 20px;
@@ -95,8 +89,6 @@ body {
         padding: 10px;
         font-weight: bold;
         text-transform: uppercase;
-        font-size: inherit;
-        flex-direction: column;
     }
 
     h3 {
@@ -129,7 +121,6 @@ body {
         padding: 20px;
         border-top: 1px solid black;
         text-align: center;
-        flex-direction: column;
     }
 
     .whats {
@@ -179,23 +170,4 @@ body {
         border-radius: 5px;
         font-size: 16px;
         margin-bottom: 10px;
-    }
-
-    /*Ajustes especificos para la vista mobile*/
-    /*0 hasta 768px*/
-
-    @media (max-width:990px) {
-        .promocion {
-            grid-template-columns: 1fr;
-        }
-    }
-    
-    @media (max-width:1023px) {
-        /*header*/
-
-        .encabezado {
-            height: auto;
-            flex-direction:column ;
-            text-align: center;
-        }
     }
