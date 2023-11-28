@@ -1,0 +1,58 @@
+/*HEADER*/
+
+@mixin anclas {
+    text-decoration: none;
+    color: black
+}
+
+.encabezado {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    background-color: #fff;
+}
+
+/*Buscar*/
+
+.btn {
+    margin-bottom: 20px;
+}
+
+/*Header*/
+
+header {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* Logo*/
+
+.logo {
+
+    width: 150px;
+    cursor: pointer;
+}
+
+/*Barras de sitios web*/
+
+nav ul li {
+
+    list-style: none;
+    display: inline-block;
+    margin: 20px 10px;
+    padding: 0 20px;
+}
+
+a {
+    @include anclas;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: blue;
+    color: #fafafa;
+}

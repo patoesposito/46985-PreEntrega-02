@@ -1,0 +1,25 @@
+/*RESPONSIVE*/
+
+/*VISTA TABLET*/
+/*768PX HASTA 1023PX*/
+
+@media (max-width:1023px) {
+    /*Header*/
+
+    .encabezado {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .encabezado .boton {
+        display: none;
+    }
+
+    /*Banner*/
+
+    .bannerContenido p {
+        font-size: 2.5rem;
+    }
+
+}

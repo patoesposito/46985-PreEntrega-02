@@ -1,0 +1,44 @@
+/* Main*/
+
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px 0;
+}
+
+h2 {
+    text-decoration: underline;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Promociones*/
+
+.promocionAdidas,
+.promocionNike,
+.promocionPuma {
+    width: 500px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3 {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}

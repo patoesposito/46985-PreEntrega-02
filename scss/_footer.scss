@@ -1,0 +1,35 @@
+/* Footer*/
+
+footer {
+    margin: 20px;
+    padding: 20px;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+.whats {
+    margin: auto;
+    padding: auto;
+    border: 1px solid #333;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.fb {
+    margin-bottom: auto;
+    margin: auto;
+    padding: auto;
+    border: 10px solid black;
+    width: 100px;
+    height: auto;
+}
+
+/* Iframe*/
+
+iframe {
+    display: block;
+    margin: auto;
+}
