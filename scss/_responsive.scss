@@ -23,3 +23,25 @@
     }
 
 }
+
+/* Estilos generales para tamaños de pantalla más grandes (por defecto)*/
+
+.page__content img {
+    max-width: 100%;
+}
+
+/* Media query para tamaños de pantalla más pequeños, como teléfonos móviles*/
+
+@media only screen and (max-width: 767px) {    
+    .page__title {
+        font-size: 1.5rem;
+    }
+}
+
+    /* Tamaño de fuente más pequeño para títulos en dispositivos móviles*/
+
+  .page__content img {
+      width: 100%;
+    }
+
+    /* Asegura que la imagen ocupe el ancho completo en dispositivos móviles
