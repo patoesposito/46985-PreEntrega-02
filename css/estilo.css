@@ -93,8 +93,8 @@ h2 {
 }
 
 h3 {
-  background-color: #333;
-  color: #fff;
+  /*background-color: #333;*/
+  color:black;
   text-align: center;
   text-decoration: underline;
   text-transform: uppercase;
