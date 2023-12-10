@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -94,7 +95,7 @@ h2 {
 
 h3 {
   /*background-color: #333;*/
-  color:black;
+  color: black;
   text-align: center;
   text-decoration: underline;
   text-transform: uppercase;
@@ -171,20 +172,24 @@ button {
 /*VISTA TABLET*/
 /*768PX HASTA 1023PX*/
 @media (max-width: 1023px) {
+
   /*Header*/
   .encabezado {
     height: auto;
     flex-direction: column;
     text-align: center;
   }
+
   .encabezado .boton {
     display: none;
   }
+
   /*Banner*/
   .bannerContenido p {
     font-size: 2.5rem;
   }
 }
+
 /* Estilos generales para tamaños de pantalla más grandes (por defecto)*/
 .page__content img {
   max-width: 100%;
@@ -196,6 +201,7 @@ button {
     font-size: 1.5rem;
   }
 }
+
 /* Tamaño de fuente más pequeño para títulos en dispositivos móviles*/
 .page__content img {
   width: 100%;
@@ -204,13 +210,14 @@ button {
 /*CARROUSEL*/
 
 .carousel-item img {
-  max-width: 100%; /* Hace que las imágenes del carousel sean responsivas */
+  max-width: 100%;
+  /* Hace que las imágenes del carousel sean responsivas */
 }
 
 /* Media query para tamaños de pantalla más pequeños, como teléfonos móviles */
 
 @media only screen and (max-width: 767px) {
-  .carousel-item img {
-  }
-}  
+  .carousel-item img {}
+}
+
 /*# sourceMappingURL=estilo.css.map */
