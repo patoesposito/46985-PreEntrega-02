@@ -22,6 +22,7 @@ h2 {
 .promocionAdidas,
 .promocionNike,
 .promocionPuma {
+    margin-top: 2rem;
     width: 500px;
     background-color: #333;
     color: #fff;
@@ -32,7 +33,7 @@ h2 {
 }
 
 h3 {
-    background-color: #333;
+    background-color: blue;
     color: #fff;
     text-align: center;
     text-decoration: underline;
@@ -41,4 +42,10 @@ h3 {
     padding: 10px;
     font-weight: bold;
     font-size: 18px;
+}
+
+/*PRODUCTOS*/
+
+.card {
+    margin-top: 2rem;
 }

@@ -18,6 +18,7 @@
 
 .btn {
     margin-bottom: 20px;
+    margin-top: 2rem;
 }
 
 /*Header*/
@@ -31,9 +32,10 @@ header {
 /* Logo*/
 
 .logo {
-
     width: 150px;
     cursor: pointer;
+    margin-top: 2rem;
+    border-radius: 5rem;
 }
 
 /*Barras de sitios web*/
@@ -55,4 +57,8 @@ a {
 a:hover {
     background-color: blue;
     color: #fafafa;
+}
+
+.background-menu {
+    background: transparent !important;
 }
