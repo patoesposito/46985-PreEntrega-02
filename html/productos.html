@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-    content="Bienvenidos a Tienda Futbol Quilmes, donde te garantizamos la venta de botines 100% originales">
+        content="Bienvenidos a Tienda Futbol Quilmes, donde te garantizamos la venta de botines 100% originales">
     <title>Todo Futbol Quilmes</title>
 
     <!-- CSS de Bootstrap -->
@@ -14,6 +14,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
+
+    <!-- CSS CON AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body class="container-fluid">
@@ -27,7 +31,10 @@
             <a class="navbar-brand" href="../index.html" class="navbar-brand">
                 <img class="logo" src="../img/Todo Futbol Quilmes.webp" alt="Logo" width="100">
             </a>
-            <nav class="navbar navbar-expand-md navbar-light">
+
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary background-menu">
+            <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,31 +42,25 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
                         </li>
-                        <li class="nav-item btn-group">
-                            <a class="nav-link" href="productos.html">Producto</a>
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Nike</a>
-                                <a class="dropdown-item" href="#">Adidas</a>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="comprasegura.html">Compra Segura</a>
+                        </li>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
-        </div>
+            </div>
+        </nav>
 
 
         <a class="btn btn-primary" href="#">Buscar</a>
@@ -73,7 +74,7 @@
         <div class="container">
             <h2 class="my-4 text-center">Productos de Botines</h2>
             <div class="row">
-                <div class="col-xl-3 col-md-6 col-sm-12">
+                <div data-aos="flip-left" class="col-xl-3 col-md-6 col-sm-12">
                     <div class="card">
                         <img src="../img/Botines Predator3.jpg" class="card-img-top" alt="Botín 1">
                         <div class="card-body">
@@ -86,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 col-sm-12">
+                <div data-aos="flip-left" class="col-xl-3 col-md-6 col-sm-12">
                     <div class="card">
                         <img src="../img/Botin Nike2.jpg" class="card-img-top" alt="Botín 2">
                         <div class="card-body">
@@ -99,7 +100,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 col-sm-12">
+                <div data-aos="flip-right" class="col-xl-3 col-md-6 col-sm-12">
                     <div class="card">
                         <img src="../img/Botin Puma2.jpg" class="card-img-top" alt="Botín 3">
                         <div class="card-body">
@@ -113,7 +114,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-md-6 col-sm-12">
+                <div data-aos="flip-right" class="col-xl-3 col-md-6 col-sm-12">
                     <div class="card">
                         <img src="../img/Botines Predator2.webp" class="card-img-top" alt="Botín 4">
                         <div class="card-body">
@@ -126,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 col-sm-12">
+                <div data-aos="flip-left" class="col-xl-3 col-md-6 col-sm-12">
                     <div class="card">
                         <img src="../img/Botin Nike.jpg" class="card-img-top" alt="Botín 5">
                         <div class="card-body">
@@ -139,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 col-sm-12">
+                <div data-aos="flip-left" class="col-xl-3 col-md-6 col-sm-12">
                     <div class="card">
                         <img src="../img/Botin Puma3.jpg" class="card-img-top" alt="Botín 6">
                         <div class="card-body">
@@ -154,7 +155,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-md-6 col-sm-12">
+                <div data-aos="flip-right" class="col-xl-3 col-md-6 col-sm-12">
                     <div class="card">
                         <img src="../img/Botin Nike.jpg" class="card-img-top" alt="Botín 5">
                         <div class="card-body">
@@ -168,7 +169,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 col-sm-12">
+                <div data-aos="flip-right" class="col-xl-3 col-md-6 col-sm-12">
                     <div class="card">
                         <img src="../img/Botin Puma3.jpg" class="card-img-top" alt="Botín 6">
                         <div class="card-body">
@@ -275,6 +276,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
