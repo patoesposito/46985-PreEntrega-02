@@ -132,3 +132,23 @@ const USUARIOS = [
   for (const productosBotines of BOTINES){
     console.log(productosBotines);
   }
+
+  // DOM //
+
+  const pId = document.getElementById('pId');
+  console.log(pId) 
+
+  const pId = document.getElementsByClassName('pClass');
+  console.log(pId) 
+
+  const pId = document.getElementsByName('li');
+  console.log(pId);
+
+  const queryTag = document.querySelectorAll ("span")
+  console.log(queryTag);
+
+  const queryTag = document.querySelectorAll (".queryClass")
+  console.log(queryClass);
+
+  const queryId = document.querySelectorAll ("#queryid")
+  console.log(queryClass);
