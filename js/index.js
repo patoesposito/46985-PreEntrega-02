@@ -136,19 +136,46 @@ for (const productosBotines of BOTINES) {
 // DOM //
 
 const link = [
-  { text: "inicio", url: "../index.html"},
-  { text: "producto", url: "./comprasegura.html"},
-  { text: "producto", url: "./contato.html"},
-  { text: "producto", url: "./productos.html"},
-  { text: "producto", url: "./quienessomos.html"}
+  { text: "inicio", url: "../index.html" },
+  { text: "producto", url: "./comprasegura.html" },
+  { text: "producto", url: "./contato.html" },
+  { text: "producto", url: "./productos.html" },
+  { text: "producto", url: "./quienessomos.html" }
 ]
 
 const navBar = document.getElementById("navBar")
 
-link.forEach(link =>{
+link.forEach(link => {
   const anchor = document.createElement('a');
   ancla.textContent = link.text;
   ancla.href = link.url;
   navBar.appendChild(ancla);
 })
 
+// SOTRAGE //
+
+localStorage.setItem("numero", 123456);
+
+let numero = localStorage.getItem("123456");
+console.log(typeof numero);
+
+const container-fluid = localStorage.getItem("container-fluid")
+
+if(container-fluid ==="dark"){
+  document.body.classList.add("dark)");
+}
+else{
+  document.body.classList.remove("dark");
+}
+
+let persona = {nombre:"manuel", edad: 25, ciudad:"quilmes"};
+
+const personaJSON = JSON.stringify(persona);
+
+localStorage.setItem("persona, personaJSON");
+
+const usuarioLocal = localStorage.getItem("persona");
+HTMLFormControlsCollection.log(usuarioLocal)
+
+const usuarioObjeto = JSON.parse(usuarioLocal);
+console.log(usuarioObjeto);
