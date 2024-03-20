@@ -161,14 +161,14 @@ console.log(typeof numero);
 
 const container-fluid = localStorage.getItem("container-fluid")
 
-if(container-fluid ==="dark"){
+if (container - fluid === "dark") {
   document.body.classList.add("dark)");
 }
-else{
+else {
   document.body.classList.remove("dark");
 }
 
-let persona = {nombre:"manuel", edad: 25, ciudad:"quilmes"};
+let persona = { nombre: "manuel", edad: 25, ciudad: "quilmes" };
 
 const personaJSON = JSON.stringify(persona);
 
@@ -179,3 +179,41 @@ HTMLFormControlsCollection.log(usuarioLocal)
 
 const usuarioObjeto = JSON.parse(usuarioLocal);
 console.log(usuarioObjeto);
+
+localStorage.removeItem('saludo');
+
+//JSON//
+
+let comprador = {nombre:"pedro", edad:26, ciudad:"Quilmes"};
+
+const compradorJSON = JSON.stringify(comprador);
+
+localStorage.setItem("comprador", compradorJSON);
+
+const usuarioEnElLocal = localStorage.getItem("comprador");
+console.log(usuarioEnElLocal)
+
+const.caja = document.getElementById("caja");
+
+caja.onemouseover = () => {
+  console.log("ingreso el mouse")
+}
+
+caja.addEventListener('mouseout', function () {
+  console.log("el mouse esta fuera")
+})
+
+const toastify = document.getElementById('toastify');
+toastify.addEventListener('click', () => {
+  Toastify({
+    text: "producto agregado al carrito",
+    duration: 2000,
+    position: "right",
+    gravity: "top",
+    style: {
+      background: "red"
+    }
+  }).showToast();
+})
+
+
