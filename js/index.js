@@ -152,35 +152,7 @@ link.forEach(link => {
   navBar.appendChild(ancla);
 })
 
-// SOTRAGE //
 
-localStorage.setItem("numero", 123456);
-
-let numero = localStorage.getItem("123456");
-console.log(typeof numero);
-
-const container-fluid = localStorage.getItem("container-fluid")
-
-if (container - fluid === "dark") {
-  document.body.classList.add("dark)");
-}
-else {
-  document.body.classList.remove("dark");
-}
-
-let persona = { nombre: "manuel", edad: 25, ciudad: "quilmes" };
-
-const personaJSON = JSON.stringify(persona);
-
-localStorage.setItem("persona, personaJSON");
-
-const usuarioLocal = localStorage.getItem("persona");
-HTMLFormControlsCollection.log(usuarioLocal)
-
-const usuarioObjeto = JSON.parse(usuarioLocal);
-console.log(usuarioObjeto);
-
-localStorage.removeItem('saludo');
 
 //JSON//
 
@@ -193,7 +165,7 @@ localStorage.setItem("comprador", compradorJSON);
 const usuarioEnElLocal = localStorage.getItem("comprador");
 console.log(usuarioEnElLocal)
 
-const.caja = document.getElementById("caja");
+const caja = document.getElementById("caja");
 
 caja.onemouseover = () => {
   console.log("ingreso el mouse")
@@ -216,4 +188,35 @@ toastify.addEventListener('click', () => {
   }).showToast();
 })
 
+//URL FORMATO JSON//
+const url = "http://jsonplaceholder.typicode.com/users";
 
+const xhr = new XMLHttpRequest()
+
+function manejadora (){
+   if(this.readyState === 4 && this.status === 200){
+
+      const datos = JSON.parse(this.response);
+      console.log(datos);
+      moastrarUsuarios(datos)
+      document.getElementById("app");
+      
+      function verUsuario(datos){
+        datos.forEach(usuarios =>{
+          const div = document.createElement("div")
+          div.innerText = '${usuarios.name}';
+          
+          app.appendChild(div)
+        });
+      }
+      
+      
+    }
+
+}
+
+xhr.addEventListener('load',manejadora);
+
+xhr.open("GET",url);
+
+xhr.send() 
